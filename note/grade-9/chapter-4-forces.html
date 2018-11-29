@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Physics and Measurement | Chapter-1 exercises</title>
+        <meta charset="utf-8">
+        <meta name="viewport"       content="width=device-width, initial-scale=1.0">
+        <meta name="author"         content="Nay Yaung Lin Lakk">
+        <meta name="description"    content="၉တန္း ႐ူပေဗဒ အခန္း (၁) ေလ့က်င့္ခန္းမ်ား">
+        <meta name="keywords"       content="chapter-1, mechanics, Grade-9 physics chapter-1">
+
+        
+        <script src="framework/jquery.js"></script>
+        <script src="framework/popper.min.js"></script>
+        <script src="framework/bootstrap.min.js"></script>
+        <script src="framework/grade9.js"></script>
+
+        <link rel="stylesheet" href="framework/bootstrap.min.css">
+        <link rel="stylesheet" href="https://mmwebfonts.comquas.com/fonts/?font=zawgyi" />
+        <link rel="stylesheet" href="https://mmwebfonts.comquas.com/fonts/?font=unimon" />
+        <link rel="stylesheet" href="framework/grade9.css">
+    </head>
+    <body>
+
+        <!--create a navigation bar-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-success fixed-top">
+            <a class="navbar-brand" href=""> Chapter-1 (Mechanics)</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="navbarPhy">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarPhy">
+                    <ul class="navbar-nav">
+                        <li class="nav-items">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-items">
+                            <a class="nav-link" href="#intro">Intro</a>
+                        </li>
+                        <li class="nav-items">
+                            <a class="nav-link" href="#physics-studios">Physics-Studios</a>
+                        </li>
+                        <li class="nav-items">
+                            <a class="nav-link" href="#concept">Concept</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav> 
+
+        <!--create a main session-->
+        <div class="container text">
+            <!--create a search bar-->
+            <input class="form-control search-note" id="data-list" type="text" placeholder="Search.." maxlength="2"> <br>
+
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note">Eg(1) 
+                        If 10 N force acts upon a 2 kg mass,find the acceleration produced.
+                    </h5>
+                    <h6 class="note">
+                        2kg ေပၚကို 10N အား သက္ေရာက္လိုက္မယ္ဆိုရင္ ျဖစ္လာမယ့္ အ႐ွိန္ကို ႐ွာပါတဲ့။
+                    </h6>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                        တတိယနိယာမအရ အ႐ွိန္နဲ႔ အားနဲ႔ဟာ အရာတစ္ခုတည္းရဲ႕ သြင္ျပင္လကၡဏာႏွစ္ခုပဲ။ လြယ္လြယ္ေျပာရရင္ 
+                        <b>သက္ေရာက္အားကို သိရင္ ျဖစ္လာမယ့္အ႐ွိန္ကိုလည္း သိမွာပဲ။ ျဖစ္လာတဲ့အ႐ွိန္ကို သိရင္ သက္ေရာက္လိုက္မယ့္အားကို သိမွာပဲ။</b> 
+                        <br> အခုပုစာၦမွာ သက္ေရာက္တဲ့အားကို သိတယ္ဆိုရင္ေတာ့ ျဖစ္လာမယ့္အ႐ွိန္ကိုလည္း တြက္လို႔ရၿပီေပါ့။ mass ကိုလည္း ေပးထားတယ္ေလ။ <br>
+                        <button class="btn btn-outline-secondary" type="button" id="answer-btn1">Answer</button>
+                        <span class="answer1" style="display: none;"> 5 ms<sup>-2</sup></span>
+                    </p>
+                </div>
+            </div>
+            
+
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note">Eg(2)
+                        Find the magnitude of a force needed to acceleration an electron from rest to a 
+                        velocity of 10<sup>9</sup> cm s<sup>-1</sup> in 10 s. (An electron mass = 9.1 x 10<sup>-28</sup>g)
+                    </h5>
+                    <h6 class="note">
+                        အီလက္ထရြန္တစ္လံုး နားေနရာကေန 10 s အတြင္းမွာ အလ်င္ႏႈန္း 10 cms<sup>-1</sup> 
+                                                ျဖစ္လာေအာင္ အားဘယ္ေလာက္ သက္ေရာက္လိုက္ရမလဲ (အားဘယ္ေလာက္လိုမလဲ)တဲ့။ velocity,time,mass ေပးၿပီး force ကို႐ွာခိုင္းတာ။           
+                    </h6>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                        အားနဲ႔ ဆက္စပ္ေနတာက အ႐ွိန္.. ၊ ျဖစ္လာမယ့္အ႐ွိန္ကိုသိရင္ သက္ေရာက္တဲ့အားကိုလည္း သိၿပီ။ ဆိုေတာ့ 
+                        အား (F) ကို သိခ်င္ရင္ 
+                    
+                        အ႐ွိန္ (a)ကိုသိမွျဖစ္မယ္။ ဒါေပမယ့္ ပုစာၦမွာ အ႐ွိန္ (a)ကို ေပးမထားဘူး။ ဒါေၾကာင့္ 
+                        အ႐ွိန္ (a)ကို အရင္႐ွာရမယ္။ ဒီပုစာၦမွာေတာ့ အ႐ွိန္နဲ႔ ဆက္ႏြယ္ေနတာဆိုလို႔ အလ်င္ (v)ပဲ႐ွိတယ္။ (အ႐ွိန္ဆိုတာ အလ်င္ေျပာင္းလဲႏႈန္းေလ) ဒါဆို 
+                        v ကေန a ကို ႐ွာႏုိင္မလား.. ႐ွာႏုိင္ရင္ ကိုယ္လိုခ်ငိတဲ့ F ကိုလည္း ရၿပီေပါ့။ <br>
+
+                                                 ေပးထားခ်က္အရ နားေနရာကေန စထြက္လာတာ 10s အတြင္းမွာ အလ်င္က 10 cms<sup>-1</sup>ျဖစ္လာတယ္တဲ့။ 10cms<sup>-1</sup> 
+                        ဆိုတာ ေနာက္ဆံုးျဖစ္လာတဲ့ final velocity -v ။<strong> from rest နားေနရာကေန စထြက္ လာတယ္လို႔ ေျပာတဲ့အတြက္ 
+                        initial velocity - v<sub>0</sub> က သုည ျဖစ္မယ္။</strong> acceleration ရဲ႕ အဓိပၸါယ္သတ္မွတ္ခ်က္အရ 
+                        ကနဦးစဦးအလ်င္ကေန ေနာက္ဆံုးအလ်င္ေရာက္ဖုိ႔ ဘယ္ေလာက္ၾကာလဲသိရင္ အ႐ွိန္ တစ္နည္းအားျဖင့္ ဘယ္ေလာက္အခ်ိန္မွာ 
+                        ဘယ္ေလာက္အလ်င္ထိ ျမန္သြားလဲဆိုတဲ့ အလ်င္ေျပာင္းလဲႏႈန္းကို တြက္လို႔ရၿပီေပါ့။ 
+                        ပံုေသနည္းက a = (v - v<sub>0</sub>)/ t ေပါ့။ a ရရင္ F ကိုလည္း တြက္လို႔ရၿပီေပါ့။ 
+                       
+                        <button class="btn btn-outline-secondary" type="button" id="answer-btn2">Answer</button>
+                        <span class="answer2" style="display: none;"> 
+                            9.1 x 10 <sup>-20</sup> dyne,
+                            <font color="red">* ယူနစ္ေတြကိုသတိထားပါ။ ေပးထားတာက CGS စနစ္၊ ဒါေၾကာင့္ အားကလည္း dyne ပဲ ျဖစ္ရမယ္။</font>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(3)
+                        A 12 lb force gives a body an acceleration of 4 ft s<sup>-2</sup>
+                        .Find the mass of the body.
+                    </h5>
+                    <h6 class="note">
+                        12 lb အားက အရာဝတၳဳတစ္ခုကို အ႐ွိန္ 4 fts<sup>-2</sup> ျဖစ္ေစတယ္။ ဒါဆို အဲ့ဒီအရာဝတၱဳရဲ႕ mass ကဘယ္ေလာက္လဲတဲ့။ 
+                    </h6>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                        လြယ္ပါတယ္။ အ႐ွိန္ a ကိုေရာ အား F ကိုေရာ ေပးထားေတာ့ F = ma အရ mass ကို တြက္လို႔ရၿပီေပါ့။ <br>
+                        <button class="btn btn-outline-secondary" type="button" id="answer-btn3">Answer</button>
+                        <span class="answer3" style="display: none;"> 3 sl,
+                            <font color="red">
+                                * ယူနစ္ ေတြကို သတိထားပါ၊ FPS စနစ္ေတြျဖစ္ေနပါတယ္။ ဒါေၾကာင့္ mass ရဲ႕ unit ကလည္း (slag-sl)ပဲ ျဖစ္ရမယ္။
+                            </font>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(4)
+                        A 4 kg ball is at rest on a perfectly smooth plane which is in a horizontal position.
+                        A force of 10 N is applied horizontally to the ball. Find the speed of the ball and the distance 
+                        travelled after 6s.
+                    </h5>
+                    <h6 class="note">
+                        4 kg ႐ွိတဲ့ ေဘာလံုးေလးက ေခ်ာမြတ္ေနတဲ့ျပင္ညီေပၚမွာ ႐ွိေနတယ္။ အဲဒီေဘာလံုးကို horizontal direction အတုိင္း 10 N အားနဲ႔ 
+                        တြန္းလႊတ္လိုုက္တယ္။ ဒါဆို အခ်ိန္ 6 s ၾကာၿပီးတဲ့အခါ ျဖစ္လာမယ့္ အျမန္ႏႈန္း speed နဲ႔ ေပါက္ေရာက္ခဲ့တဲ့ ခရီးအကြာအေဝး distance ကို တြက္ပါတဲ့။ 
+                        m, F, t ေပးၿပီး speed နဲ႔ distance. ကိုတြက္ခိုင္းတာ။ speed ကို အရင္ စဥ္းစားၾကည့္ရေအာင္။ <br>
+                        6 s ၾကာတဲ့အခါ ျဖစ္လာမယ့္ speed..။ speed ဆိုေပမယ့္ velocity (v) လို႔ ေျပာလည္းရတယ္။ 
+                        6 s ၾကာတဲ့အခါ ျဖစ္လာမယ့္ velocity ေပါ့။ velocity ဆိုတာ acceleration နဲ႔ပတ္သက္ေနတဲ့ေကာင္၊ acceleration 
+                        ကို သိရင္ velocity ကိုလည္း တြက္လို႔ရႏိုင္တယ္။ ေပးခ်က္ထဲမွာ F ပါေတာ့ a ကို တြက္လို႔ရၿပီေပါ့။
+                    </h6>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                        <button class="btn btn-outline-secondary" type="button" id="answer-btn4">Answer</button>
+                        <span class="answer4" style="display: none;">a = 2.5 m s<sup>-2</sup>,
+                                v = 2.5 x 6 = 15ms<sup>-1</sup>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(5)
+                        A 2 kg ball is moving with an inital speed of 15 m s<sup>-1</sup> on a rough plane which is in a horizontal
+                        position, and gradually slows down and stops after travelling 20 m. Find the magnitude of the force which resists the
+                        motion of the ball.
+                    </h5>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                        <button class="btn btn-outline-secondary" type="button" id="answer-btn5">Answer</button>
+                        <span class="answer5" style="display: none;"> a = -5.6ms<sup>-2</sup>, F = -11.2N</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(6)
+                        Find the gravitational force between two 1 kb masses held 1 m apart.
+                    </h5>
+                    <span class="label note">ျဒပ္ဆြဲအား ပုစာၦ</span>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                            <button class="btn btn-outline-secondary" type="button" id="answer-btn6">Answer</button>
+                            <span class="answer6" style="display: none;"> F = 6.67 x 10<sup>-11</sup>N</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(7)
+                        Express the valve of G in the CGS units.
+                    </h5>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                        <button class="btn btn-outline-secondary" type="button" id="answer-btn7">Answer</button>
+                        <span class="answer7" style="display: none;">G = 6.67 x 10<sup>-8</sup> cm<sup>3</sup> g<sup>-1</sup> s<sup>-2</sup></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(8)
+                        Find the value of the acceleration due to gravity g.
+                    </h5>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                        <button class="btn btn-outline-secondary" type="button" id="answer-btn8">Answer</button>
+                        <span class="answer8" style="display: none;"> g = 980 cm s<sup>-2</sup></span>   
+                    </p>
+                </div>
+            </div>
+
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(9)
+                        5 kg and 10 kg masses are at a place on the top of a hill where g has
+                        the value 9.75ms<sup>-2</sup>. Find the weights of the masses.
+                    </h5>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                        <button class="btn btn-outline-secondary" type="button" id="answer-btn9">Answer</button>
+                        <span class="answer9" style="display: none;"> 
+                            w<sub>5kg</sub> = 48.75 N, w<sub>10kg</sub> = 97.5N
+                        </span>       
+                    </p>
+                </div>
+            </div>
+
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(10)
+                        Find the mass of a body weighting 3232 lb.
+                    </h5>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                        <button class="btn btn-outline-secondary" type="button" id="answer-btn10">Answer</button>
+                        <span class="answer10" style="display: none;">m = 101 sl </span>                               
+                    </p>
+                </div>
+            </div>
+
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(11)
+                        If a body weighting 320 lb is moving at an acceleration of
+                        10 ft s<sup>-2</sup>. Find the net force acting on the body.
+                    </h5>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                        <button class="btn btn-outline-secondary" type="button" id="answer-btn11">Answer</button>
+                        <span class="answer11" style="display: none;"> m = 10 sl, F = 100 lb</span>                             
+                    </p>
+                </div>
+            </div>
+          
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(12)
+                        In the British engineering system the density of water is 
+                        1.94 sl ft<sup>-3</sup>. Find the weight of 1 ft<sup>3</sup> of water.    
+                    </h5>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                        <button class="btn btn-outline-secondary" type="button" id="answer-btn12">Answer</button>
+                        <span class="answer12" style="display: none;"> w = 62.5 lb</span>                        
+                    </p>
+                </div>
+            </div>
+ 
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(13)
+                        If the volume of a metal sphere of 210 g mass is 20 cm<sup>3</sup>    what is 
+                        the density of the metal?                                    
+                    </h5>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                        <button class="btn btn-outline-secondary" type="button" id="answer-btn13">Answer</button>
+                        <span class="answer13" style="display: none;">  ρ = 10.5 g cm<sup>-3</sup></span>                       
+                    </p>
+                </div>
+            </div>
+                       
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(14)
+                        Express the value of the density from example (13) in SI units.                
+                    </h5>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                            <button class="btn btn-outline-secondary" type="button" id="answer-btn14">Answer</button>
+                            <span class="answer14" style="display: none;"> 
+                                    ρ = 1.05 x 10<sup>4</sup> kg m <sup>-3</sup>
+                            </span>                          
+                    </p>
+                </div>
+            </div>
+
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(15)
+                        The density of helium at 0' C is 0.178 kg m<sup>-3</sup>     .Find the mass of the 
+                        helium gas which is in a balloon of volume 1000 m <sup>3</sup>.
+                    </h5>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                            <button class="btn btn-outline-secondary" type="button" id="answer-btn15">Answer</button>
+                            <span class="answer15" style="display: none;"> 
+                                m = 178 kg
+                            </span>                                  
+                    </p>
+                </div>
+            </div>
+                
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(16)
+                        Find the relative density of helium at 0' C.                             
+                    </h5>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                        <button class="btn btn-outline-secondary" type="button" id="answer-btn16">Answer</button>
+                        <span class="answer16" style="display: none;"> 
+                            the relative density of helium = 1.78 x 10 <sup>-4</sup> 
+                        </span>                                     
+                    </p>
+                </div>
+            </div>
+
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(17)
+                        Find the relative density of glycerine at 0' C <br>
+                        (density of glycerine = 1260 kg m<sup>-3</sup>).                              
+                    </h5>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                        <button class="btn btn-outline-secondary" type="button" id="answer-btn17">Answer</button>
+                        <span class="answer17" style="display: none;"> 
+                                the relative density of glycerine = 1.26
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(18)
+                        A 25 N force acts normally on a surface whose area is 5 x 10 <sup>-4</sup> m <sup>2</sup>.
+                        What is the pressure?                  
+                    </h5>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                            <button class="btn btn-outline-secondary" type="button" id="answer-btn18">Answer</button>
+                            <span class="answer18" style="display: none;"> 
+                                 p = 5 x 10<sup>4</sup> Pa
+                            </span>                                           
+                    </p>
+                </div>
+            </div>
+
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(19)
+                        A 25 N force is applied to the piston of a syringe. The area of the piston is 10<sup>-4</sup> m <sup>2</sup>.
+                        If no liquid flows out of the syringe, find the increase in pressure on the liquid.                                          
+                    </h5>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                        <button class="btn btn-outline-secondary" type="button" id="answer-btn19">Answer</button>
+                        <span class="answer19" style="display: none;"> 
+                            P = 2.5 x 10<sup>5</sup> Pa
+                        </span>                                               
+                    </p>
+                </div>
+            </div>
+
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(20)
+                        Express 2 x 10 <sup>5</sup> Pa pressure in lb in<sup>-2</sup> and in bars.                     
+                    </h5>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                        <button class="btn btn-outline-secondary" type="button" id="answer-btn20">Answer</button>
+                        <span class="answer20" style="display: none;"> 
+                            2 b
+                        </span>                                                    
+                    </p>
+                </div>
+            </div>
+
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(21)
+                        Which of the pressures 2 x 10<sup>5</sup> Pa, 1b, 10<sup>4</sup>m b is the greatest?                               
+                    </h5>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                        <button class="btn btn-outline-secondary" type="button" id="answer-btn21">Answer</button>
+                        <span class="answer21" style="display: none;"> 
+                            Therefore, the 10<sup>4</sup> mb pressure is the greatest.
+                        </span>                                                        
+                    </p>
+                </div>
+            </div>
+
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(22)
+                        A bullet of mass 50g leaves the muzzle of a gun with a velocity of 20000 cm s<sup>-1</sup>.
+                        Find the momentum of the bullet.                     
+                    </h5>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                        <button class="btn btn-outline-secondary" type="button" id="answer-btn22">Answer</button>
+                        <span class="answer22" style="display: none;"> 
+                            p = 10<sup>6</sup> g cm s<sup>-1</sup>
+                        </span>                                                           
+                    </p>
+                </div>
+            </div>
+
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(23)
+                        Find the total momentum of the following system, <br>
+                        (a) Two electrons each having mass m are moving towards each other with the 
+                        speed of 0.01 c. <br>
+                        (b) One of the two electrons having mass m is moving at a velocity of 0.01 c while the other is moving
+                        at a velocity of 0.02 c in the same direction.(c is the velocity of light and its value is 
+                        3 x 10<sup>8</sup>ms<sup>-1</sup>)                                                     
+                    </h5>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                        <button class="btn btn-outline-secondary" type="button" id="answer-btn23">Answer</button>
+                        <span class="answer23" style="display: none;"> 
+                            (a) = -0.01 mc, (b) = 0.02 mc, the total momentum = 0.03 mc
+                        </span>                                                           
+                    </p>
+                </div>
+            </div>
+
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(24)
+                        A bullet of mass 16 g ( 0.016kg ) is fired from a 4kg gun with a velocity 0f
+                        600 ms<sup>-1</sup>.What is the recoil velocity of the gun?                               
+                    </h5>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                        <button class="btn btn-outline-secondary" type="button" id="answer-btn24">Answer</button>
+                        <span class="answer24" style="display: none;"> 
+                            the recoil velocity of the gun = 2.4 ms<sup>-1</sup>
+                        </span>                                                                 
+                    </p>
+                </div>
+            </div>
+
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(25)
+                        A man dived horizontally with a velocity of 1.5 m s<sup>-1</sup> from a 100 kg 
+                        boat. If the recoil velocity of the boat is 0.9 m s<sup>-1</sup>.What is the mass of the man?
+                    </h5>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                        <button class="btn btn-outline-secondary" type="button" id="answer-btn25">Answer</button>
+                        <span class="answer25" style="display: none;"> 
+                            mass of the man = 60kg
+                        </span>                                                                      
+                    </p>
+                </div>
+            </div>
+
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(26)
+                        A ball is thrown upwards with a velocity of 40 ms<sup>-1</sup>. How long does the ball stay
+                        in the air?What height does the ball reach? (Assume that g=10ms<sup>-2</sup>)                                                              
+                    </h5>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                        <button class="btn btn-outline-secondary" type="button" id="answer-btn26">Answer</button>
+                        <span class="answer26" style="display: none;"> 
+                            h = 80 m
+                        </span>                                                                         
+                    </p>
+                </div>
+            </div>
+
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(27)
+                        What is the velocity of a stone freely falling from a height of 2000 cm when 
+                        it strikes the ground? How long does the stone take to reach the ground?                                                                
+                    </h5>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                        <button class="btn btn-outline-secondary" type="button" id="answer-btn27">Answer</button>
+                        <span class="answer27" style="display: none;"> 
+                            v = 2 x 10<sup>3</sup> cm s<sup>-1</sup>,t = 2s
+                        </span>                                                                             
+                    </p>
+                </div>
+            </div>
+
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(28)
+                        An object is hurled vertically upwards with a speed of 50 ms<sup>-1</sup>.How long does
+                        it take the object to be caught again?what height does the object reach? What is the 
+                        average velocity for the whole distance travelled?   <br>
+                        (Assume that g = 10ms<sup>-2</sup>)                                                     
+                    </h5>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                        <button class="btn btn-outline-secondary" type="button" id="answer-btn28">Answer</button>
+                        <span class="answer28" style="display: none;"> 
+                            average velocity = 0 ms<sup>-1</sup>
+                        </span>                                                                                  
+                    </p>
+                </div>
+            </div>
+
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(29)
+                        A projectile is shot up vertically with a velocity of 100 m s<sup>-1</sup>.
+                        How long does it take the projectile to reach a height of 375m ? <br>
+                        (Assume that g = 10 m s<sup>-2</sup>)
+                    </h5>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                            <button class="btn btn-outline-secondary" type="button" id="answer-btn29">Answer</button>
+                            <span class="answer29" style="display: none;"> 
+                                t = 5s (or) 15s
+                            </span>                                                                                          
+                    </p>
+                </div>
+            </div>
+
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(30)
+                        A seesaw is pivoted at its centre. One boy weighting 250N is sitting at the left-hand  
+                        side, 3m form the fulcrum. Another boy weighting 225N is at the other side.
+                        IF the two boys are in balance, find the distance of the second boy from the fulcrum.
+
+                    </h5>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                        <button class="btn btn-outline-secondary" type="button" id="answer-btn30">Answer</button>
+                        <span class="answer30" style="display: none;"> 
+                            3.33m
+                        </span>                                                                                                                                                                                                          
+                    </p>
+                </div>
+            </div>
+
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(31)
+                        A uniform metre rule weighting 4 N, pivoted at the 20 cm mark, is supported at the 
+                        right-hand end at the 100 cm mark, by a vertical thread.Find the tension in the thread.
+                    </h5>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                        <button class="btn btn-outline-secondary" type="button" id="answer-btn31">Answer</button>
+                        <span class="answer31" style="display: none;"> 
+                            F = 1.5 N
+                        </span>                                                                                                
+                    </p>
+                </div>
+            </div>
+                    
+            <div class="exercises" id="note-list">
+                <div class="note-que">
+                    <h5 class="note"> Eg(32)
+                        A uniform metre rule weighting 4 N is pivoted at the 25 cm mark.
+                        A load of 100g is placed at the 100 cm mark.If the metre rule, along with the load, is to 
+                        be in balance, what force must be applied at other end: 0cm mark, (acceleration due to gravity g = 10 N kg<sup>-1</sup>)                                                              
+                    </h5>
+                </div>
+                <div class="note-ans">
+                    <p class="note">
+                        <button class="btn btn-outline-secondary" type="button" id="answer-btn32">Answer</button>
+                        <span class="answer32" style="display: none;"> 
+                            F = 7 N
+                        </span>                                                                                                     
+                    </p>
+                </div> 
+            </div>
+        
+        </div>
+
+        </div>
+
+    </body>
+</html>

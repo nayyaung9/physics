@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Mechanics | Freely Falling Bodies</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport"       content="width=device-width, initial-scale=1.0">
+        <meta name="author"         content="Nay Yaung Lin Lakk">
+        <meta name="description"    content="လြတ္လပ္စြာ က် ဆင္းျခင္း ">
+        <meta name="keywords"       content="free falling bodies">
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <script src="jquery.js"></script>
+        <script src="mechanics.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=zawgyi' />
+        <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=unimon' />
+        <link rel="shortcut icon" href="image/logo.png">
+        <link rel="stylesheet" href="mechanics.css">
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-md bg-success navbar-dark fixed-top">
+            <a class="navbar-brand" href="http://edumyanmar.net/physics/articles/mechanics/acceleration.html"> လြတ္လပ္စြာ က် ဆင္းျခင္း </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="navbarPhy">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarPhy">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mechanics.html">list</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+
+        <div class="container-fluid image-fluid text">
+                <img src="image/free-falling.jpg" width="100%">
+            </div>
+            <div class="contianer-fluid header-fluid bg-success text-white">
+                <h2 class="container">
+                    Freely falling bodies
+                </h2>
+            </div>
+            <div class="date container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="float-left">
+                            <span class="text-info">Aug 6 at 6:00 p.m</span>
+                        </div>
+                        <div class="float-right">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="container text">
+            <p>
+                အမွန္​​ေတာ့ဒီအ​ေၾကာင္​းကို Linear motion ​ေအာက္​မွာထည္​့သင္​့တာ။ဘာလို႔လဲဆို​ေတာ့ သူတို႔​ေ႐ြ႕လ်ားမႈကလည္​း 
+                linear motion မ်ဥ္​း​ေျဖာင္​့​ေ႐ြ႕လ်ားမႈပဲ​ေလ။ဒါ​ေၾကာင္​့ linear motion ကိုနားလည္​ရင္​ ဒိအ​ေၾကာင္​းကလည္​း မခက္​​ေတာ့ဘူး။
+                အထက္​တက္​တဲ့​ေကာင္​ပဲျဖစ္​ျဖစ္​ ​ေအာက္​ကိုက်လာတဲ့​ေကာင္​ပဲျဖစ္​ျဖစ္​ ကိန္​း​ေသအရွိန္​ရွိတယ္​။ကိန္​း​ေသအရွိန္​နဲ႔ က်လာတယ္​။
+                ကိန္​း​ေသအရွိန္​နဲံ တက္​သြားတယ္​။ဘာလို႔လဲ....မင္​းတို႔သိပါတယ္​။ကမာၻႀကီး၇ဲ့ ဆြဲအား​ေၾကာင္​့....ဟုတ္​လား။တစ္​ခြန္​းတည္​း​ေျပာရရင္​
+                                ​ေအာက္​ကိုက်လာတဲ့​ေကာင္​​ေတြက ျဒပ္​ဆြဲအရွိန္​​ေၾကာင္​့ ျဖစ္​လာတဲ့ constant acceleration-g နဲ႔က်လာတယ္​။ (acceleration က်လာတာျဖစ္​လို႔ 
+                                ​ေအာက္​ကိုက်လာတဲ့ အျမန္​နႈန္​းတိုးလာၿပီး တစ္​ျဖည္​းျဖည္​းျမန္​လာတယ္​၊ ​ေအာက္​ကို​ေရာက္​​ေလ​ေလျမန္​​ေလ​ေလပဲ။)အထက္​ကိုတက္​လာတဲ့
+                                ​ေကာင္​​ေတြကလည္​း ျဒပ္​ဆြဲအရွိန္​​ေၾကာင္​့ျဖစ္​လာတဲ့ constant acceleration-g တက္​ရတယ္​။အတိအက်​ေျပာရရင္​ g ကိုဆန္​႔က်င္​ၿပီဂ 
+                တက္​ရတယ္​။တစ္​နည္​းအားျဖင္​့ ဘရိတ္​ဖမ္​းတဲ့သ​ေဘာ ဆုတ္​ရွိန္​​ေပါ့။(ဆုတ္​ရွိန္​ deceleration တက္​လာတာျဖစ္​လို႔ တက္​သြားတဲ့ ပစၥည္​း​ေတြဟာ 
+                အျမန္​နႈန္​း​ေလ်ာ့လာၿပီး တစ္​ျဖည္​းျဖည္​း​ေနွးလာတယ္​၊အထက္​ကို​ေရာက္​​ေလ​ေလ ​ေနွးလာ​ေလ​ေလပဲ ​ေနာက္​ဆံုးမွာ ရပ္​သြားမယ္​။)ဒီ​ေတာ့ 
+                Free-falling ပုစၥာဆိုတာနဲံ g ဆိုတဲ့အရွိန္​ရွိတယ္​ဆိုတာသ​ေဘာ​ေပါက္​၊ ပုစၥာမွာ​ေတာ့​ေပးထားမွာမဟုတ္​ဘူး။​ေအာ္​....​ေနာက္​တစ္​ခုက 
+                ပုစၥာ​ေတြမွာ​ေပးမထား​ေပမယ္​့ သိထားရမယ္​့အခ်က္​နွစ္​ခ်က္​ ရွိ​ေသးတယ္​။​ေအာက္​ကိုက်လာတဲ့​ေကာင္​​ေတြဆို စဦးအလ်င္​က သုည(initial velocity Vo=0)၊ 
+                အထက္​တက္​သြားမယ္​​ေကာင္​​ေတြ အတြက္​ဆို(တက္​ၿပိးရင္​ ရပ္​သြားမွာ ျဖစ္​လို႔) ​ေနာက္​ဆံုးအလ်င္​က သုည(final velocity V=0)ဆိုတာကိုလည္​း 
+                (ပုစၥာမွာ မ​ေပူ​ေပမယ္​့) သိထားရမယ္​။လမ္​းခုလတ္​ ဆိုရင္​​ေတာ့ သုည မဟုတ္​ဘူး​ေနာ္​လြဲအံုးမယ္​။
+                ကိုင္​း....ဒီပုစၥာ​ေတြအတြက္​ သံုးရမယ္​့ ပံု​ေသနည္​း​ေတြက Linear motion မွာ(အရွိန္​နဲ ႔​ေ႐ြ႕တဲ့​ေကာင္​​ေတြ အတြက္​)
+                သံုးတဲံပံု​ေသနည္​း​ေတြက အတူတူပဲ။တစ္​ခုပဲ....အထက္​မွာ​ေျပာခဲ့သလိုပဲ သူက constant acceleration-g နဲ႔ တက္​တာက်တာဆို​ေတာ္​့ 
+                တစ္​ခါတည္​း ပံု​ေသနည္​းမွာပါတဲ့ a ​ေနရာမွာတစ္​ခါတည္​း g လို႔ျပင္​လိုက္​မယ္​။ ဒီ​ေတာ့ပံု​ေသနည္​း​ေတြကဒီလိုျဖစ္​သြားမယ္​။
+            </p>
+            <p>
+                                ​ေနာက္​အ​ေရးႀကီးဆံုးအခ်က္​က direction သ​ေဘာကိုတစ္​ခါတည္​းထည္​့စဥ္​းစားရမယ္​။ဘယ္​လိုလဲဆို​ေတာ့ ​ေအာက္​ကိုက်လာရင္​ 
+                ကိစၥမရွိ​ေပမယ္​့ အထက္​ကိုတက္​သြား သြားတဲ့ direction နဲ႔ (တစ္​နည္​းအားျဖင္​့ v တို႔ s တို႔ရဲ႕ direction နဲ႔)acceleration-g ရဲ႕ 
+                direction က​ေအာက္​ကို....ဟုတ္​လား။အဲ့ဒီလိုျဖစ္​သြားရင္​ V ရဲ႕ direction နဲ႔ g ရဲ႕ direction က လကၡဏာမတူ​ေတာ့ဘူး။အတူတူ​ေပးလို႔ 
+                မရ​ေတာ့ဘူး။ဒါ​ေၾကာင္​့ အထက္​ကိုတက္​သြားရင္​ g ကို အနႈတ္​ (minus,-) နဲ႔ျပရမယ္​။g ကို အနႈတ္​မ​ေပး​ေစခ်င္​ရင္​ v နဲ႔ s ​ေတြကိုအနႈတ္​​ေပးရ 
+                လိမ္​့မယ္​။​ေသခ်ာတာက​ေတာ့ တစ္​ခုခုကို အနႈတ္​​ေပးရမယ္​။(လြယ္​​ေအာင္​ g ကိုပဲအနႈတ္​​ေပးလိုက္​ပါ) ​ေအာက္​ကိုက်လာတဲ့ ​ေကာင္​​ေတြက​ေတာ့ direction
+                                 ​ေတြကအတူတူပဲ။ v တို႔ s တို႔ရဲ႕ direction ​ေရာ g ရဲ႕ direction ပါ​ေအာက္​ဖက္​ကိုပဲ။ ဒါ့​ေၾကာင္​့ ​ေအာက္​ကိုက်လာရင္​​ေတာ့ g ကိုအနႈတ္​​ေပးစရာ မလိုဘူး။
+                ဒီသ​ေဘာ​ေလ​ေတြ နားလည္​ရင္​ free falling ပုစၥာကို တြက္​လို႔ရၿပီ။ပံု​ေသနည္​းကိုလည္​း ဒီလိုတစ္​ခါတည္​းျပင္​လိုက္​မယ္​။
+                ၁- a ​ေတြကို g လို႔ျပင္​မယ္​ (အတက္​အဆင္​း နွစ္​ခုအတြက္​ +g,-g ရယ္​လို႔ နွစ္​မ်ိဳး ရွိတယ္​)
+                ၂-အကြာအ​ေဝး s ကို အျမင္​့ h လို႔ျပင္​မယ္​ (သ​ေကၤတ စာလံုး​ေျပာင္​းသြားတာ ဘာမွမဟုတ္​ဘူး) <br>
+                ဒီ​ေတာ့ ပုစၥာကို​ေသခ်ာဖတ္​ တက္​တာလား၊ က်တာလား။ဖတ္​ၿပီး တစ္​ခါတည္​း အ​ေပါင္​းအနႈတ္​ခြဲ....ဟုတ္​လား။ နာက္​တစ္​ခုက ဖတ္​စာအုပ္​ထဲမွာ 
+                free-falling ပုစၥာအတြက္​ 
+                ဆိုတဲ့ အီ​ေကြးရွင္​း​ေတြ ထက္​တိုးလာတယ္​။ အီ​ေကြးရွင္​းမ်ားလွတယ္​ ဆိုၿပီး လန္​႔မသြားနဲ႔.....အထက္​က အီ​ေကြးရွင္​း​ေတြကို ျပင္​လိုက္​တာဆိုပါ​ေတာ့....
+                ဆိုတာ ​ေအာက္​ကိုက်လာတဲ့ ​ေကာင္​​ေတြအတြက္​ ဆိုတဲ့ အီ​ေကြးရွင္​းကို ျပင္​တာ။ ​ေအာက္​ကိုက်လာရင္​ က သုညကိုး။ သုည အစားသြင္​းလိုက္​​ေတာ့ ကိုရတာ​ေပါ့။ 
+                ဆိုလဲ အဲ့လိုပဲ....​ေအာက္​ကိုက်လာတဲ့​ေကာင္​​ေတြ အတြက္​
+
+            </p>
+        </div>
+
+        <div class="container">
+                <div class="row label-btn">
+                    <div class="col-md-12">
+                        <div class="float-left">
+                            <a class="btn btn-success" href="displacement.html"> &lt; Previous</a>
+                        </div>
+                        <div class="float-right">
+                            <a class="btn btn-success" href="new-and-old-mechanics.html">Next &gt;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                    <h2 class="sub-header">Related Articles</h2>
+                    <div class="media">
+                        <img src="image/weightAmass.jpg" class="align-self-center mr-3 mecha-img" style="width: 150px;height: 120px;box-shadow: 3px 3px 3px #555;margin-left: 10px;">
+                        <div class="media-body">
+                            <a href="https://nayyaung9.github.io/mmphysicsref/articles/mechanics/weightAmass.html">
+                            <h4>Weight and mass</h4>
+                            <p>အ​ေလးခ်ိန္​က အဲ့ဒီအရာ၀တၴဳရဲ႕ ​ေအာက္​ကိုသက္​​ေရာက္​တဲ့အားကို​ေျပာတာ။ျဒပ္​သားက အဲ့ဒီအရာ၀တၳဳရဲ႕ ပမာဏကို​ေျပာတာ ...</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <img src="image/force.png" class="align-self-center mr-3 mecha-img" style="width: 150px;height: 120px;box-shadow: 3px 3px 3px #555;margin-left: 10px;">
+                        <div class="media-body">
+                            <a href="https://nayyaung9.github.io/mmphysicsref/articles/mechanics/force.html">
+                            <h4>Force</h4>
+                            <p> ေရြ႔လ်ားမႈကို ျဖစ္ေစတဲ့အရင္းခံအေၾကာင္းတရားကေတာ့ 'အား' ပဲ။ ဒီစကားလံုးဟာ
+                                မင္းတုိ႔ နဲ႔ရင္းႏွီးကြၽမ္းဝင္ၿပီးသားလည္း ျဖစ္တယ္။ေန႔စဥ္ၾကားေနရတဲ့စကားလံုးလည္း ျဖစ္တယ္။....</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <img src="image/work-done.jpg" class="align-self-center mr-3 mecha-img" style="width: 150px;height: 120px;box-shadow: 3px 3px 3px #555;margin-left: 10px;">
+                        <div class="media-body">
+                            <a href="https://nayyaung9.github.io/mmphysicsref/articles/mechanics/work-done.html">
+                            <h4>Work done </h4>
+                            <p>အလုပ္ဆိုတာ ခရီးအကြာအေဝးေပၚမူတည္တယ္။(ေရြ႔ရမယ့္ပစၥည္းရဲ႕ အေလးခ်ိန္ထက္)ကိုယ္စိုက္ထုတ္ရတဲ့ အားေပၚမွာလည္း မူတည္လို႔ ေကာက္ခ်က္ခ်လို႔ရသြားၿပီ.... </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+        <div class="container">
+                <h2 class="sub-header">Popular Posts</h2>
+                <div class="media">
+                    <img src="image/simple-machine.jpg" class="align-self-center mr-3 mecha-img" style="width: 150px;height: 120px;box-shadow: 3px 3px 3px #555;margin-left: 10px;">
+                    <div class="media-body">
+                        <a href="https://nayyaung9.github.io/mmphysicsref/articles/mechanics/machine.html">
+                            <h4>႐ိုး႐ွင္းေသာ စက္မ်ားအေၾကာင္း</h4>
+                            <p> စိုက္ထုတ္ရတယ့္အားပမာဏ(Effort)ကိုေလ်ာ့က်သြားေအာင္ထြင္ထားတာ။ တစ္မ်ဳိးလွည့္ေျပာရရင္စိုက္ထုတ္ရတယ့္အားကိုဆပြားေပးတာ...အဲ့တာစက္ဘဲ....</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="media">
+                    <img src="image/weightAmass.jpg" class="align-self-center mr-3 mecha-img" style="width: 150px;height: 120px;box-shadow: 3px 3px 3px #555;margin-left: 10px;">
+                    <div class="media-body">
+                        <a href="https://nayyaung9.github.io/mmphysicsref/articles/mechanics/weightAmass.html">
+                            <h4>အေလးခ်ိန္ ႏွင့္ ျဒပ္သား</h4>
+                            <p> အ​ေလးခ်ိန္​က အဲ့ဒီအရာ၀တၴဳရဲ႕ ​ေအာက္​ကိုသက္​​ေရာက္​တဲ့အားကို​ေျပာတာ။ျဒပ္​သားက အဲ့ဒီအရာ၀တၳဳရဲ႕ ပမာဏကို​ေျပာတာ။ ....</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="media">
+                    <img src="image/pressure0.jpg" class="align-self-center mr-3 mecha-img" style="width: 150px;height: 120px;box-shadow: 3px 3px 3px #555;margin-left: 10px;">
+                    <div class="media-body">
+                        <a href="https://nayyaung9.github.io/mmphysicsref/articles/mechanics/pressure.html">
+                            <h4>ေလထုဖိအား</h4>
+                            <p> လႀကီးက ငါတုိ႔အေပၚဖိထားတာ သိေတာင္မသိပါလားေပါ့။ အမွန္က ဖိအား႐ွိတယ္၊ ကိုယ္တုိ႔ကို ဖိထားတယ္။ ဘယ္ေလာက္ေတာင္ဖိထားသလဲဆိုရင္ ....</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="media">
+                    <img src="image/energy.jpg" class="align-self-center mr-3 mecha-img" style="width: 150px;height: 120px;box-shadow: 3px 3px 3px #555;margin-left: 10px;">
+                    <div class="media-body">
+                        <a href="https://nayyaung9.github.io/mmphysicsref/articles/mechanics/energy.html">
+                            <h4>စြမ္းအင္ </h4>
+                            <p>  စြမ္းအင္ဆိုတာ အလုပ္ျဖစ္ေစတဲ့အေကာင္၊ ဒါေၾကာင့္ ႐ူပေဗဒမွာ စြမ္းအင္ကို အလုပ္ပဲလို႔ ယူဆတယ္။ ယူနစ္လည္း အတူတူပဲ....</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid footer bg-success">
+                    <h3 class="text-center">
+                        Myanmar Student Website 
+                    </h3>
+                    <br>
+                    <p class="text-center">
+                        &copy; Copyright By Golden Arrow Teach Yourself Physics <br>
+                        Developed By Nay Yaung Lin Lakk <br>
+                    </p>
+                </div>
+</body>
+</html>

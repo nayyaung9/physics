@@ -1,0 +1,18 @@
+h1 {
+    padding-top: 60px;
+    font-size: 30px;
+}
+h1,p,a {
+    font-family: "Zawgyi-One",Arial, Helvetica, sans-serif,'Uni Mon';
+}
+
+.section-lesson {
+    padding-top: 80px;
+}
+.media {
+    margin-bottom: 20px;
+}
+.footer {
+    padding: 30px;
+    height: 80px;
+}
