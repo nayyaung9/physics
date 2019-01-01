@@ -1,3 +1,6 @@
+body {
+    font-family: 'Slabo 27px', serif;
+}
 nav {
     border-bottom: 1px solid #ddd;
 }
@@ -32,4 +35,10 @@ section {
     width: 35px;
     height: 35px;
     border-radius: 100%;
+}
+.about {
+    padding: 20px;
+}
+.footer {
+    padding: 20px;
 }
